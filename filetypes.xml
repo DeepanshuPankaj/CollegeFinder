@@ -1,0 +1,8 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="HorrorActivity" type="CLASS" />
+      <mapping pattern="Horror_Activity" type="JAVA" />
+    </extensionMap>
+  </component>
+</application>
