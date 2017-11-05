@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="PLEASE PRODIVE THE FOLLOWING INFORMANTION"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/Name"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/info"
+        android:layout_alignStart="@+id/info" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_alignTop="@+id/Name"
+        android:layout_alignBottom="@+id/Name"
+        android:layout_alignEnd="@+id/info"
+        android:layout_toEndOf="@+id/Name" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mail"
+        android:text="EMAIL ID"
+        android:layout_below="@+id/Name"
+        android:layout_alignStart="@+id/Name"
+        android:layout_marginTop="24dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mail"
+        android:layout_alignBottom="@+id/mail"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_toEndOf="@+id/mail"
+        android:id="@+id/editText3" />
+    <TextView
+        android:id="@+id/board_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE 10TH BOARD"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/mail"
+        android:layout_alignStart="@+id/mail" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/board_10"
+        android:layout_toEndOf="@+id/board_10"
+        android:layout_alignBottom="@+id/board_10"
+        android:id="@+id/spinner2"></Spinner>
+    <TextView
+        android:id="@+id/prent10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10TH PERCENTAGE"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/board_10"
+        android:layout_alignStart="@+id/board_10" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/prent10"
+        android:layout_alignEnd="@+id/spinner2"
+        android:layout_toEndOf="@+id/prent10"
+        android:layout_alignBottom="@+id/prent10" />
+    <TextView
+        android:id="@+id/board_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE 12TH BOARD"
+        android:layout_below="@+id/prent10"
+        android:layout_alignStart="@+id/prent10"
+        android:layout_marginTop="22dp" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/board_12"
+        android:layout_toEndOf="@+id/board_12"
+        android:layout_alignBottom="@+id/board_12"
+        android:id="@+id/spinner3"></Spinner>
+    <TextView
+        android:id="@+id/prent12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12TH PERCENTAGE"
+        android:layout_below="@+id/board_12"
+        android:layout_alignStart="@+id/board_12"
+        android:layout_marginTop="26dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/prent12"
+        android:layout_alignBottom="@+id/prent12"
+        android:layout_alignEnd="@+id/spinner3"
+        android:layout_toEndOf="@+id/prent12"
+        android:id="@+id/editText2" />
+    <TextView
+        android:id="@+id/compt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HAVE YOU GIVE ANY NATIONAL/STATE EXAM TILL NOW?"
+        android:layout_below="@+id/prent12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/compt"
+        android:layout_alignStart="@+id/compt"
+        android:layout_alignEnd="@+id/compt"
+        android:weightSum="1">
+        <RadioButton
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YES"
+            android:layout_weight="0.07" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/city_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PREFFERED CITY 1"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignStart="@+id/prent12"
+        android:layout_marginTop="34dp" />
+<Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/city_1"
+        android:layout_alignBottom="@+id/city_1"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_toEndOf="@+id/prent12"
+        android:id="@+id/spinner4"></Spinner>
+    <TextView
+        android:id="@+id/city_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PREFFERED CITY 2"
+        android:layout_below="@+id/city_1"
+        android:layout_alignStart="@+id/city_3"
+        android:layout_marginTop="10dp" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/city_2"
+        android:layout_alignStart="@+id/spinner4"
+        android:layout_alignEnd="@+id/spinner4"
+        android:layout_alignBottom="@+id/city_2"
+        android:id="@+id/spinner5"></Spinner>
+    <TextView
+        android:id="@+id/city_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PREFERRED CITY 3"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/city_2"
+        android:layout_alignEnd="@+id/city_1" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_alignTop="@+id/city_3"
+        android:layout_alignStart="@+id/spinner5"
+        android:layout_alignEnd="@+id/spinner5"
+        android:layout_alignBottom="@+id/city_3"></Spinner>
+
+    <RadioButton
+    android:id="@+id/No"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioGroup"
+        android:text="No"
+        android:layout_alignStart="@+id/spinner4"
+        android:layout_alignEnd="@+id/spinner4" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FIND COLLEGE"
+        android:layout_alignTop="@+id/spinner"
+        android:layout_alignEnd="@+id/editText3" />
+</RelativeLayout>
